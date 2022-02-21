@@ -1,0 +1,15 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+<h1>Character Search</h1>
+
+<hr>
+
+<form action="{{ url_for('collection.add_hero') }}" method="POST">
+
+    <div class="form-group">
+        <input type="search" class="form-control" name="name" placeholder="Character Name" />
+    </div>
+
+</form>
+{% endblock %}
